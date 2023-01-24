@@ -395,7 +395,7 @@ header.stiky {
 
 /* TEST-MIX-START */
 
-.skills .box {
+/* .skills .box {
   position: relative;
   width: 100%;
   display: grid;
@@ -447,7 +447,7 @@ header.stiky {
 .percent-git {
   width: 50%;
   background: var(--main-color);
-}
+} */
 /* TEST-MIX-END */
 
 /* After end p */
