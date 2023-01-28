@@ -19,11 +19,11 @@ window.onscroll = () => {
 
 const sr = ScrollReveal({
   distance: "45px",
-  duration: 2700,
+  duration: 2000,
   reset: true,
 });
 
-sr.reveal(".home-text", { delay: 350, origin: "left" });
-sr.reveal(".home-img", { delay: 350, origin: "right" });
+sr.reveal(".home-text", { delay: 250, origin: "left" });
+sr.reveal(".home-img", { delay: 250, origin: "right" });
 
 sr.reveal(".about, .portfolio", { delay: 200, origin: "bottom" });
