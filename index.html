@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
@@ -71,11 +72,8 @@
         <img src="img/photo-work.png" alt="" />
       </div>
       <div class="about-text">
-        <!-- <h3>I'm a Front-End Developer</h3> -->
         <h3>Who am I</h3>
         <h2>About me</h2>
-        <!-- <h2>Let's Make a Website For You ;)</h2> -->
-
         <p>
           I am a developper with good experience in HTML, CSS and JS. I strive
           to create reliable, adaptive, cross-browser web products based on best
@@ -87,7 +85,8 @@
           doing sports and developing in various directions: swimming, running,
           strength training. <br />
         </p>
-        <a href="#contact" class="btn">Hire Me</a>
+        <button class="btn about-btn" id="open-form-modal-btn">Hire Me</button>
+        <!-- <a href="#contact" class="btn">Hire Me</a> -->
       </div>
     </section>
 
@@ -101,43 +100,23 @@
           is responsive and adaptive design.
         </p>
       </div>
-
       <div class="portfolio-content">
         <div class="col">
-          <img src="./img/photo-gallery.jpg" alt="" />
-          <a
-            href="https://responsive-wd.netlify.app/photo-gallery.html"
-            target="_blank"
-          >
+          <img src="./img/dutrion-site.jpg" alt="" />
+          <a href="https://dutrion-vn.netlify.app/" target="_blank">
             <div class="layer">
-              <h3>CSS Flexbox</h3>
-              <h5>Photo Gallery</h5>
+              <h3>Disinfection Products</h3>
+              <h5>Website</h5>
             </div>
           </a>
         </div>
 
         <div class="col">
-          <img src="./img/city-skyline.jpg" alt="" />
-          <a
-            href="https://responsive-wd.netlify.app/city-skyline.html"
-            target="_blank"
-          >
+          <img src="./img/cv-portfolio.jpg" alt="" />
+          <a href="https://alexander-chorny.netlify.app/" target="_blank">
             <div class="layer">
-              <h3>CSS variables + Flexbox</h3>
-              <h5>City Skyline</h5>
-            </div>
-          </a>
-        </div>
-
-        <div class="col">
-          <img src="./img/doc-page.jpg" alt="" />
-          <a
-            href="https://responsive-wd.netlify.app/documentation-page.html"
-            target="_blank"
-          >
-            <div class="layer">
-              <h3>Html + Css</h3>
-              <h5>Documentation Page</h5>
+              <h3>Portfolio & CV</h3>
+              <h5>Website</h5>
             </div>
           </a>
         </div>
@@ -145,25 +124,38 @@
         <div class="col">
           <img src="./img/magazine.jpg" alt="" />
           <a
-            href="https://responsive-wd.netlify.app/magazine.html"
+            href="https://projects-rwd.netlify.app/magazine.html"
             target="_blank"
           >
             <div class="layer">
-              <h3>CSS Grid</h3>
-              <h5>Magazine</h5>
+              <h3>Magazine</h3>
+              <h5>CSS Grid</h5>
             </div>
           </a>
         </div>
 
         <div class="col">
-          <img src="./img/ferris-wheel.jpg" alt="" />
+          <img src="./img/photo-gallery.jpg" alt="" />
           <a
-            href="https://responsive-wd.netlify.app/ferris-wheel.html"
+            href="https://projects-rwd.netlify.app/photo-gallery.html"
             target="_blank"
           >
             <div class="layer">
-              <h3>CSS animation</h3>
-              <h5>Ferris Wheel</h5>
+              <h3>Photo Gallery</h3>
+              <h5>CSS Flexbox</h5>
+            </div>
+          </a>
+        </div>
+
+        <div class="col">
+          <img src="./img/doc-page.jpg" alt="" />
+          <a
+            href="https://projects-rwd.netlify.app/documentation-page.html"
+            target="_blank"
+          >
+            <div class="layer">
+              <h3>Documentation Page</h3>
+              <h5>Html + Css</h5>
             </div>
           </a>
         </div>
@@ -179,14 +171,14 @@
         </div>
 
         <div class="action">
-          <form>
+          <form action="#" data-netlify="true" id="form_2">
             <input
               type="email"
               name="email"
               placeholder="Enter your email"
               required
             />
-            <input type="submit" name="submit" id="submit" value="Submit" />
+            <input type="submit" name="submit" value="Submit" />
           </form>
         </div>
       </div>
@@ -200,8 +192,58 @@
       </p>
     </div>
 
+    <!--form-modal-->
+    <div class="modal-bgd" id="form-modal">
+      <!-- modal-bgd modal-active -->
+      <div class="modal-form-container">
+        <button class="close-btn">x</button>
+        <form action="#" class="modal-form" data-netlify="true" id="form">
+          <img class="form-logo" src="./img/logo-6.svg" alt="devAl-logo" />
+
+          <h4 class="modal-form-title">Let's talk about everything</h4>
+          <p class="modal-form-dscr">Send me an email.</p>
+
+          <div class="modal-form-field">
+            <label for="user-name" class="modal-field-name">Name</label>
+            <input
+              required
+              type="text"
+              class="modal-field-input"
+              id="user-name"
+              name="Ім'я"
+            />
+          </div>
+
+          <div class="modal-form-field">
+            <label for="user-email" class="modal-field-name">Email</label>
+            <input
+              required
+              type="email"
+              class="modal-field-input"
+              id="user-email"
+              name="Email"
+            />
+          </div>
+
+          <button class="modal-form-btn" id="launch-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal-bgd" id="success-modal">
+      <!-- modal-bgd modal-active -->
+      <div class="modal-form modal-form-container">
+        <button class="close-btn">x</button>
+        <img class="form-logo" src="./img/logo-6.svg" alt="devAl-logo" />
+
+        <h4 class="modal-form-title">Your email has been sent</h4>
+        <p class="modal-form-dscr modal-dscr">Thank you for contacting me!</p>
+      </div>
+    </div>
+
     <!--link to js-->
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

@@ -17,13 +17,15 @@ window.onscroll = () => {
   navlist.classList.remove("active");
 };
 
-const sr = ScrollReveal({
-  distance: "45px",
-  duration: 2000,
-  reset: true,
+document.addEventListener("DOMContentLoaded", () => {
+  const sr = ScrollReveal({
+    distance: "45px",
+    duration: 2000,
+    reset: true,
+  });
+
+  sr.reveal(".home-text", { delay: 250, origin: "left" });
+  sr.reveal(".home-img", { delay: 250, origin: "right" });
+
+  sr.reveal(".about, .portfolio", { delay: 200, origin: "bottom" });
 });
-
-sr.reveal(".home-text", { delay: 250, origin: "left" });
-sr.reveal(".home-img", { delay: 250, origin: "right" });
-
-sr.reveal(".about, .portfolio", { delay: 200, origin: "bottom" });
