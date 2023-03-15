@@ -273,7 +273,6 @@ header.stiky {
 
 .portfolio-content {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, auto)); */
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   align-items: center;
@@ -290,7 +289,7 @@ header.stiky {
 
 .col img {
   max-width: 100%;
-  width: 550px;
+  width: 100%;
   height: 240px;
   object-fit: cover;
   border-radius: 12px;
@@ -352,13 +351,12 @@ header.stiky {
   background: #f77a57;
   width: 64%;
   margin: 80px auto;
-  padding: 70px 150px;
+  padding: 4rem 22% 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   border-radius: 12px;
-  /* background-image: url(../img/background-1.jpg); */
   background-size: cover;
 }
 
@@ -540,6 +538,9 @@ header.stiky {
   .portfolio-content {
     gap: 1rem;
   }
+  .contact .action form input[type="email"] {
+    width: 22rem;
+  }
 }
 
 @media (max-width: 540px) {
@@ -584,9 +585,10 @@ header.stiky {
   }
   .contact {
     width: 92%;
+    padding: 3rem 10% 2rem;
     margin: 60px auto;
   }
   .contact .action form input[type="email"] {
-    width: 300px;
+    width: 95%;
   }
 }
