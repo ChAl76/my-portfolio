@@ -19,7 +19,7 @@ window.onscroll = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const sr = ScrollReveal({
-    distance: "45px",
+    // distance: "45px",
     duration: 2000,
     reset: true,
   });
