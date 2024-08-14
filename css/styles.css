@@ -429,7 +429,7 @@ header.stiky {
 
 .ends {
   text-align: center;
-  padding: 40px;
+  padding-bottom: 30px;
 }
 
 .ends p {
@@ -523,7 +523,7 @@ header.stiky {
   .home {
     display: grid;
     grid-template-columns: 1fr;
-    min-height: 130vh;
+    /* min-height: 130vh; */
     gap: 0rem;
   }
   .home-text {
