@@ -11,7 +11,18 @@ const translations = {
     professionSpan: 'Developer',
     aboutMe:
       'I strive to create reliable, adaptive, cross-browser web products based on best practices and accessibility.',
+    aboutBtn: 'About Me',
+    who: 'Who am I',
+    aboutTitle: 'About me',
+    aboutP1:
+      'I am a passionate developer with relevant experience in web development. I focus on creating reliable, adaptive, cross-browser web products, emphasizing best practices and accessibility.',
+    aboutP2:
+      'In life, I enjoy self-learning, constantly working on improving my technical and communication skills. I strive to learn something new or accomplish something useful every day.',
+    aboutP3:
+      'Additionally, I enjoy sports and pursuing diverse personal developmentopportunities.',
+    hireMe: 'Hire Me',
   },
+
   uk: {
     homeNav: 'Головна',
     aboutNav: 'Про мене',
@@ -23,7 +34,17 @@ const translations = {
     profession: 'Веб',
     professionSpan: 'Розробник',
     aboutMe:
-      'Я прагну створювати надійні, адаптивні, кросбраузерні веб-продукти, дотримуючись найкращих практик і доступності.',
+      'Прагну створювати надійні, адаптивні, кросбраузерні веб-продукти, дотримуючись найкращих практик і доступності.',
+    aboutBtn: 'Про мене',
+    who: 'Хто я',
+    aboutTitle: 'Про мене',
+    aboutP1:
+      'Я захоплений розробник із відповідним досвідом у веб-розробці. Зосереджуюсь на створенні надійних, адаптивних, крос-браузерних веб-продуктів, роблячи акцент на дотриманні найкращих практик і забезпеченні доступності.',
+    aboutP2:
+      'У житті я люблю самоосвіту, постійно працюю над покращенням своїх технічних і комунікативних навичок. Щодня прагну дізнатися щось нове або досягти чогось корисного.',
+    aboutP3:
+      'Крім того, я захоплююсь спортом і прагну до різнобічного особистісного розвитку.',
+    hireMe: 'Найми мене',
   },
 };
 
@@ -39,6 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const profession = document.getElementById('profession');
   const professionSpan = document.getElementById('profession-span');
   const aboutMe = document.getElementById('about-me');
+  const aboutBtn = document.getElementById('about-btn');
+  const who = document.getElementById('who');
+  const aboutTitle = document.getElementById('about-title');
+  const aboutP1 = document.getElementById('about-p-1');
+  const aboutP2 = document.getElementById('about-p-2');
+  const aboutP3 = document.getElementById('about-p-3');
+  const hireMe = document.getElementById('open-form-modal-btn');
 
   languageSelector.addEventListener('change', (event) => {
     setLanguage(event.target.value);
@@ -56,6 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
       profession.firstChild.nodeValue = translations.en.profession + ' ';
       professionSpan.innerText = translations.en.professionSpan;
       aboutMe.innerText = translations.en.aboutMe;
+      aboutBtn.innerText = translations.en.aboutBtn;
+      who.innerText = translations.en.who;
+      aboutTitle.innerText = translations.en.aboutTitle;
+      aboutP1.innerText = translations.en.aboutP1;
+      aboutP2.innerText = translations.en.aboutP2;
+      aboutP3.innerText = translations.en.aboutP3;
+      hireMe.innerText = translations.en.hireMe;
     } else if (language === 'uk') {
       homeNav.innerText = translations.uk.homeNav;
       aboutNav.innerText = translations.uk.aboutNav;
@@ -67,6 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
       profession.firstChild.nodeValue = translations.uk.profession + ' ';
       professionSpan.innerText = translations.uk.professionSpan;
       aboutMe.innerText = translations.uk.aboutMe;
+      aboutBtn.innerText = translations.uk.aboutBtn;
+      who.innerText = translations.uk.who;
+      aboutTitle.innerText = translations.uk.aboutTitle;
+      aboutP1.innerText = translations.uk.aboutP1;
+      aboutP2.innerText = translations.uk.aboutP2;
+      aboutP3.innerText = translations.uk.aboutP3;
+      hireMe.innerText = translations.uk.hireMe;
     }
   };
 });
