@@ -25,6 +25,10 @@ const translations = {
     myProjects: 'My Projects',
     portfolioP:
       'Most common methods for designing websites that work well on desktop is responsive and adaptive design.',
+    contactTitle: "Let's talk about everything",
+    contactP: "Don't like forms? Send me an email.",
+    inputEmail: 'Enter your email',
+    inputSubmit: 'Submit',
   },
 
   uk: {
@@ -53,6 +57,10 @@ const translations = {
     myProjects: 'Мої проекти',
     portfolioP:
       'Найпоширеніші методи дизайну вебсайтів, які добре працюють на десктопах, це адаптивний і респонзивний дизайн.',
+    contactTitle: 'Давайте обговоримо все',
+    contactP: 'Не подобаються форми? Напишіть мені на email.',
+    inputEmail: 'Введіть свій email',
+    inputSubmit: 'Надіслати',
   },
 };
 
@@ -78,6 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const portfolioTitle = document.getElementById('portfolio-title');
   const myProjects = document.getElementById('my-projects');
   const portfolioP = document.getElementById('portfolio-p');
+  const contactTitle = document.getElementById('contact-title');
+  const contactP = document.getElementById('contact-p');
+  const inputEmail = document.getElementById('input-email');
+  const inputSubmit = document.getElementById('input-submit');
 
   languageSelector.addEventListener('change', (event) => {
     setLanguage(event.target.value);
@@ -105,6 +117,10 @@ document.addEventListener('DOMContentLoaded', () => {
       portfolioTitle.innerText = translations.en.portfolioTitle;
       myProjects.innerText = translations.en.myProjects;
       portfolioP.innerText = translations.en.portfolioP;
+      contactTitle.innerText = translations.en.contactTitle;
+      contactP.innerText = translations.en.contactP;
+      inputEmail.placeholder = translations.en.inputEmail;
+      inputSubmit.value = translations.en.inputSubmit;
     } else if (language === 'uk') {
       homeNav.innerText = translations.uk.homeNav;
       aboutNav.innerText = translations.uk.aboutNav;
@@ -126,6 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
       portfolioTitle.innerText = translations.uk.portfolioTitle;
       myProjects.innerText = translations.uk.myProjects;
       portfolioP.innerText = translations.uk.portfolioP;
+      contactTitle.innerText = translations.uk.contactTitle;
+      contactP.innerText = translations.uk.contactP;
+      inputEmail.placeholder = translations.uk.inputEmail;
+      inputSubmit.value = translations.uk.inputSubmit;
     }
   };
 });
