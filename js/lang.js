@@ -21,6 +21,10 @@ const translations = {
     aboutP3:
       'Additionally, I enjoy sports and pursuing diverse personal developmentopportunities.',
     hireMe: 'Hire Me',
+    portfolioTitle: 'Portfolio',
+    myProjects: 'My Projects',
+    portfolioP:
+      'Most common methods for designing websites that work well on desktop is responsive and adaptive design.',
   },
 
   uk: {
@@ -45,6 +49,10 @@ const translations = {
     aboutP3:
       'Крім того, я захоплююсь спортом і прагну до різнобічного особистісного розвитку.',
     hireMe: 'Найми мене',
+    portfolioTitle: 'Портфоліо',
+    myProjects: 'Мої проекти',
+    portfolioP:
+      'Найпоширеніші методи дизайну вебсайтів, які добре працюють на десктопах, це адаптивний і респонзивний дизайн.',
   },
 };
 
@@ -67,6 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const aboutP2 = document.getElementById('about-p-2');
   const aboutP3 = document.getElementById('about-p-3');
   const hireMe = document.getElementById('open-form-modal-btn');
+  const portfolioTitle = document.getElementById('portfolio-title');
+  const myProjects = document.getElementById('my-projects');
+  const portfolioP = document.getElementById('portfolio-p');
 
   languageSelector.addEventListener('change', (event) => {
     setLanguage(event.target.value);
@@ -91,6 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutP2.innerText = translations.en.aboutP2;
       aboutP3.innerText = translations.en.aboutP3;
       hireMe.innerText = translations.en.hireMe;
+      portfolioTitle.innerText = translations.en.portfolioTitle;
+      myProjects.innerText = translations.en.myProjects;
+      portfolioP.innerText = translations.en.portfolioP;
     } else if (language === 'uk') {
       homeNav.innerText = translations.uk.homeNav;
       aboutNav.innerText = translations.uk.aboutNav;
@@ -109,6 +123,9 @@ document.addEventListener('DOMContentLoaded', () => {
       aboutP2.innerText = translations.uk.aboutP2;
       aboutP3.innerText = translations.uk.aboutP3;
       hireMe.innerText = translations.uk.hireMe;
+      portfolioTitle.innerText = translations.uk.portfolioTitle;
+      myProjects.innerText = translations.uk.myProjects;
+      portfolioP.innerText = translations.uk.portfolioP;
     }
   };
 });
