@@ -145,6 +145,10 @@ header {
   border: 1px solid var(--main-color);
 }
 
+#lang-sel:focus {
+  outline: none;
+}
+
 #lang-sel option {
   background-color: transparent;
   color: var(--text-color);
