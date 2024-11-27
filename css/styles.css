@@ -25,26 +25,6 @@ body {
   color: var(--text-color);
 }
 
-/* .container-bg {
-  width: 100%;
-  height: 100vh;
-  background: linear-gradient(45deg, #ff213b, #6d60ff, #22ffd3);
-  background-size: 300% 300%;
-  animation: color 5s ease-in-out infinite;
-}
-
-@keyframes color {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
-
 header {
   position: fixed;
   width: 100%;
@@ -205,6 +185,7 @@ section {
 }
 
 .social a {
+  position: relative;
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -216,6 +197,29 @@ section {
   color: var(--bg-color);
   margin-right: 22px;
   margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.social a::after {
+  content: attr(data-title);
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(247, 247, 247, 0.8);
+  color: var(--main-color);
+  font-size: 12px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.social a:hover::after {
+  opacity: 0.7;
+  transform: translateX(-50%) translateY(-5px);
 }
 
 .social a:hover {
