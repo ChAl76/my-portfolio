@@ -140,9 +140,7 @@ section {
 }
 
 .home {
-  /* min-height: 100vh; */
-  /* height: 100%;
-  width: 100%; */
+  min-height: 100vh;
   background: #f7f7f7;
   background-size: cover;
   background-position: center;
@@ -556,7 +554,7 @@ header.stiky {
   .home {
     display: grid;
     grid-template-columns: 1fr;
-    /* min-height: 130vh; */
+    min-height: auto;
     gap: 0rem;
   }
   .home-text {
