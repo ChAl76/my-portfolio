@@ -140,11 +140,10 @@ section {
 }
 
 .home {
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
+  /* min-height: 100vh; */
+  /* height: 100%;
+  width: 100%; */
   background: #f7f7f7;
-  /* background: url(../img/background-2.jpg); */
   background-size: cover;
   background-position: center;
   position: relative;
@@ -490,7 +489,7 @@ header.stiky {
     transition: 0.3s;
   }
   .home-img img {
-    width: 450px;
+    width: 350px;
     height: auto;
   }
   .about-img img {
@@ -571,7 +570,7 @@ header.stiky {
     text-align: center;
   }
   .home-img img {
-    width: 400px;
+    width: 350px;
     height: auto;
   }
   .about {
@@ -619,11 +618,16 @@ header.stiky {
     height: auto;
   }
   .top-btn {
-    padding: 7px 20px;
-    border: 1px solid var(--main-color);
+    padding: 5px 10px;
+    font-size: 0.9rem;
   }
   .top-btn:hover {
     border: 1px solid var(--main-color);
+  }
+  #lang-sel {
+    margin-left: 0.5rem;
+    letter-spacing: 0.2px;
+    font-size: 0.7rem;
   }
   section {
     padding: 70px 4%;
